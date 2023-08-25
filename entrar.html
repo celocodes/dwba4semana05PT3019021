@@ -30,44 +30,15 @@
 
 	</header>
 	<main>
-		<h1>Mande uma mensagem</h1>
+		<h1>Entrar</h1>
 		<form>
-			<ul>
-				<li>
-					<label>Nome</label>
-					<input name="nome" required>
-				</li>
-				<li>
-					<label>E-Mail</label>
-					<input name="email" type="email" required>
-				</li>
-				<li>
-					<label>Celular</label>
-					<input type="tel" name="fone" pattern="^\([0-9]{2}\) [0-9]{5}-[0-9]{4}$" required /> (99) 99999-9999
-				</li>
-				<li>
-					Assunto
-					<select name="assunto" required>
-						<option value="null">-- Selecione --</option>
-						<option value="recl">Reclamação</option>
-						<option value="sug">Sugestão</option>
-					</select>
-				</li>
-				<li>
-					<label>Mensagem</label>
-					<textarea name="mensagem" required></textarea>
-				</li>
-				<li>
-					<fieldset>
-						<legend>Opções de Resposta</legend>
-						<label>E-Mail</label><input name="opc" value="email" type="checkbox">
-						<label>Telefone</label><input name="opc" value="tel" type="checkbox">
-					</fieldset>
-				</li>
-				<li>
-					<input type="submit" value="Enviar">
-				</li>
-			</ul>
+			<label>Usuário</label>
+			<input name="user" required> <br> <br>
+			<label>Senha</label>
+			<input type= "password" name="user" required> <br> <br>
+
+			<input type="submit" value="Entrar">
+			<a href="">Esqueci a senha</a>
 		</form>
  	</main>
 

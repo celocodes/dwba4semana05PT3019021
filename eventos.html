@@ -30,44 +30,59 @@
 
 	</header>
 	<main>
-		<h1>Mande uma mensagem</h1>
+		<h1>Inscreva-se</h1>
 		<form>
-			<ul>
-				<li>
-					<label>Nome</label>
-					<input name="nome" required>
-				</li>
-				<li>
-					<label>E-Mail</label>
-					<input name="email" type="email" required>
-				</li>
-				<li>
-					<label>Celular</label>
-					<input type="tel" name="fone" pattern="^\([0-9]{2}\) [0-9]{5}-[0-9]{4}$" required /> (99) 99999-9999
-				</li>
-				<li>
-					Assunto
-					<select name="assunto" required>
-						<option value="null">-- Selecione --</option>
-						<option value="recl">Reclamação</option>
-						<option value="sug">Sugestão</option>
-					</select>
-				</li>
-				<li>
-					<label>Mensagem</label>
-					<textarea name="mensagem" required></textarea>
-				</li>
-				<li>
-					<fieldset>
-						<legend>Opções de Resposta</legend>
-						<label>E-Mail</label><input name="opc" value="email" type="checkbox">
-						<label>Telefone</label><input name="opc" value="tel" type="checkbox">
-					</fieldset>
-				</li>
-				<li>
-					<input type="submit" value="Enviar">
-				</li>
-			</ul>
+			<fieldset>
+				Evento
+				<select name="evento" required>
+					<option value="null">-- Selecione --</option>
+					<option value="voe">Voe sem asas</option>
+					<option value="festa">Festa junina</option>
+					<option value="sdt">Semana de tecnologia</option>
+				</select>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Informações de Acesso </legend> <br>
+				<label>Usuário</label>
+				<input name="user" required> <br> <br>
+				<label>Senha</label>
+				<input type= "password" name="user" required> <br> <br>
+				<label>Confirme a senha</label>
+				<input type= "password" name="user" required> <br> <br>
+			</fieldset>
+
+			<fieldset>
+				<legend>Informações Pessoais </legend> <br>
+				<label>Nome Completo</label>
+				<input name="nome" required> <br> <br>
+				<label>E-mail</label>
+				<input type= "email" name="user" required> <br> <br>
+				<label>Celular</label>
+				<input type="tel" name="fone" pattern="^\([0-9]{2}\) [0-9]{5}-[0-9]{4}$" required /> (99) 99999-9999 <br> <br>
+
+				<fieldset>
+					<legend>Sexo</legend>
+					<label>Masculino</label><input type="radio" name="sexo" value="m">
+					<label>Feminino</label><input type="radio" name="sexo" value="f">
+				</fieldset>
+				
+				<br>
+				<label>Data de Nascimento</label>
+				<input name="data" type="date" required>
+
+				<br> <br>
+				<label>Cor favorita</label>
+				<input name="cor" type="color" required>
+
+				<br> <br>
+				<label>Perfil no GitHub</label>
+				<input name="cor" type="url" required> <br>
+				
+			</fieldset>
+			<br>
+			<input type="submit" value="Inscrever">
+			<input type="reset" value="Limpar">
 		</form>
  	</main>
 
